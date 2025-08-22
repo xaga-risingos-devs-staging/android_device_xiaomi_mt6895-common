@@ -193,7 +193,6 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayMT6895 \
-    PowerOffAlarmOverlayMT6895 \
     SettingsOverlayMT6895 \
     SettingsProviderResOverlayMT6895 \
     SystemUIOverlayMT6895 \
@@ -303,8 +302,8 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libperfmgr-ext-xiaomi)
 
 # Power-off Alarm
-PRODUCT_PACKAGES += \
-    PowerOffAlarm
+#PRODUCT_PACKAGES += \
+#    PowerOffAlarm
 
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
