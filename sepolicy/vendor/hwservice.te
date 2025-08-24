@@ -1,2 +1,4 @@
 # Dolby
 type hal_dms_hwservice, hwservice_manager_type;
+# Define the servicetracker service type
+type hal_servicetracker_hwservice, hwservice_manager_type;

@@ -1,0 +1,2 @@
+# Allow system_server to find the servicetracker service
+allow system_server hal_servicetracker_hwservice:hwservice_manager find;

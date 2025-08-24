@@ -21,3 +21,6 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                           u:object
 
 # Mtdservice
 vendor.xiaomi.hardware.mtdservice::IMTService                           u:object_r:hal_mtdservice_hwservice:s0
+
+# Properly label the QTI servicetracker service
+vendor.qti.hardware.servicetracker::IServicetracker                     u:object_r:hal_servicetracker_hwservice:s0
