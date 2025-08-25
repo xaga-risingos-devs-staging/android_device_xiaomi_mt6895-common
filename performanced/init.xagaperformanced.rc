@@ -1,0 +1,12 @@
+service xagaperformanced /vendor/bin/xagaperformanced
+    class late_start
+    user root
+    group root
+    oneshot
+    seclabel u:r:xagaperformanced:s0
+
+on property:persist.sys.xaga_performance_mode=*
+    start xagaperformanced
+
+on post-fs-data
+    start xagaperformanced

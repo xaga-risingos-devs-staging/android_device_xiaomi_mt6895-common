@@ -1,0 +1,9 @@
+type xagaperformanced, domain;
+type xagaperformanced_exec, exec_type, file_type, vendor_file_type;
+allow init xagaperformanced_exec:file { getattr execute open read map };
+init_daemon_domain(xagaperformanced)
+allow xagaperformanced system_prop:file { read open getattr map };
+allow xagaperformanced system_prop:dir { search open read };
+get_prop(xagaperformanced, system_prop)
+allow xagaperformanced sysfs_devices_system_cpu:file { write open getattr read };
+allow xagaperformanced self:capability dac_override;

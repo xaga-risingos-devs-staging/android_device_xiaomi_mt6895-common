@@ -1,0 +1,10 @@
+cc_binary {
+    name: "xagaperformanced",
+    srcs: ["xagaperformanced.cpp"],
+    vendor: true,
+    cflags: ["-Wall", "-Werror"],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+    ],
+}

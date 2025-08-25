@@ -173,3 +173,6 @@
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service                   u:object_r:hal_vibrator_default_exec:s0
+
+# Performance mode
+/vendor/bin/xagaperformanced                                                  u:object_r:xagaperformanced_exec:s0
